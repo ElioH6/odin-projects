@@ -1,1 +1,1 @@
-# odin-projects
+# odin-projects Todo list project
