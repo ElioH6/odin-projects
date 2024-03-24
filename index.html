@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Todo List</h1>
+      <p>A simple todo list</p>
+
+      <div id="priorityContainer">
+        <button id="new-task">+ Add new task</button>
+        <select id="filter">
+          <option value="all">All Tasks</option>
+          <option value="pending">Pending Tasks</option>
+          <option value="completed">Completed Tasks</option>
+        </select>
+      </div>
+
+      <dialog id="dialog">
+        <form>
+          <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" />
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+          </div>
+          <div>
+            <label for="priority">Priority</label>
+            <select id="priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <div>
+            <label for="due-date">Due date</label>
+            <input type="date" id="due-date" />
+          </div>
+          <div>
+            <button type="button" id="cancel">Cancel</button>
+            <button type="submit">Add</button>
+          </div>
+        </form>
+      </dialog>
+    </header>
+
+    <main>
+      <section>
+        <h2>My tasks</h2>
+        <div class="Tasks">
+          <!-- <div class="task">
+            <div class="formResult"></div>
+            <div class="buttons">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
