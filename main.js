@@ -44,7 +44,6 @@ $(document).ready(function () {
             inputDueDate.readOnly = true;
             inputDueDate.value = "Due Date: " + task.dueDate;
             inputDueDate.classList = task.inputClass;
-
             const buttons = document.createElement("div");
             buttons.classList.add("buttons");
 
